@@ -22,6 +22,16 @@ h4 {
 	font-size: 1.25em;
 }
 
+p {
+	padding-bottom: 2.25em;
+	line-height: 1.25em;
+}
+
+.reveal .fa {
+  font-family: 'FontAwesome';
+  font-style: normal;
+}
+
 .page_title {
 	float: left;
 	padding: 0.4em 2em;
@@ -58,6 +68,11 @@ h4 {
 	margin-right: auto;
 	padding: 50px 2em;
 	background-color: #FFFFFF;
+	border-radius: 5px;
+}
+
+.wrapper:last-child {
+	margin-bottom: 2em;
 }
 
 .section_title {
@@ -66,7 +81,7 @@ h4 {
 }
 
 .subsection {
-	height: 425px;
+	height: 450px;
 }
 
 .content {
@@ -90,11 +105,6 @@ h4 {
 	width: 50%;
 }
 
-.right_col p {
-	padding-bottom: 2.25em;
-	line-height: 1.25em;
-}
-
 .right_col a {
 	text-decoration: none;
 	color: 07677F;
@@ -106,7 +116,6 @@ h4 {
 
 .portfolio_container {
 	width: 100%;
-	padding-top: 2em;
 }
 
 .portfolio_list {
@@ -115,6 +124,10 @@ h4 {
 
 .portfolio_list li {
 	display: inline;
+}
+
+.portfolio_list p {
+	padding-top: 0.75em;
 }
 
 .snapshot_container {
@@ -140,12 +153,64 @@ h4 {
 	padding: 0.5em;
 	margin: 2px;
 	border: 1px solid #000000;
+
+	-webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
 }
 
 .snapshot_container img:hover {
-
+	-webkit-transform: rotate(-10deg);
+       -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+         -o-transform: rotate(-10deg);
+            transform: rotate(-10deg);
 }
 
-.snapshot_container p {
-	padding-top: 1em;
+.footer {
+	max-width: 960px;
+	margin-top: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50px 2em; 
+}
+
+.social_header {
+	display: block !important;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.social_icons {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.social_icons li {
+	display: inline;
+	padding-left: 2em;
+}
+
+.social_icons a {
+	text-decoration: none;
+	color: #97CCE5;
+	padding: 0.75em;
+	border: 3px solid #FFFFFF;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	
+}
+
+.social_icons a:hover {
+	text-decoration: none;
+	background-color: #00334C;
+	border: 3px solid #FFFFFF;
+}
+
+.social_icons i {
+	font-size: 1.3em;
+	vertical-align: middle;
+	text-align: center;
 }
